@@ -1,0 +1,40 @@
+﻿{
+	"Interact_Objects":[
+		{
+			"ObjectName": "BlackMarket_Door",
+			"ObjectPhrases": ["Una puerta con una cerradura pequeña", "¿Quieres usar la llave pequeña?", "Usar llave pequeña", "No usar llave pequeña"]
+		},
+
+		{
+			"ObjectName": "Sword_Chest",
+			"ObjectPhrases": ["Un cofre con cerradura simple", "¿Quieres usar la llave del cofre?", "Usar llave del cofre", "No usar llave del cofre"]
+		},
+
+		{
+			"ObjectName": "VillageWall_Knight",
+			"ObjectPhrases": ["El guardia te pide que le enseñes la espada para abrirte las puertas", "¿Enseñar la espada?", "Enseñar", "No enseñar"]
+		},
+
+		{
+			"ObjectName": "SaveGame",
+			"ObjectPhrases": ["¿Deseas guardar la partida?", "¡Partida Guardada!" , "Guardar", "Salir"]
+		}
+	],
+
+	"Collectable_Objects":[
+		{
+			"ObjectName": "Small_Key",
+			"ObjectPhrase": "¡Has recogido una llave pequeña!"
+		},
+
+		{
+			"ObjectName": "Chest_Key",
+			"ObjectPhrase": "¡Has recibido una llave de un cofre!"
+		},
+
+		{
+			"ObjectName": "Sword",
+			"ObjectPhrase": "¡Has conseguido una espada! Usala para matar a tus enemigos"
+		}
+	]
+}

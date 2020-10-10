@@ -1,0 +1,40 @@
+﻿{
+	"Interact_Objects":[
+		{
+			"ObjectName": "BlackMarket_Door",
+			"ObjectPhrases": ["A door with a small lock", "Do you want to use the small key?", "Use small key", "Don't use small key"]
+		},
+
+		{
+			"ObjectName": "Sword_Chest",
+			"ObjectPhrases": ["A chest with a simple lock", "Do you want to use the chest key?", "Use chest key", "Don't use chest key"]
+		},
+
+		{
+			"ObjectName": "VillageWall_Knight",
+			"ObjectPhrases": ["The guard asks you to show him the sword to open the doors for you", "Show sword?", "Show it", "Don't show it"]
+		},
+
+		{
+			"ObjectName": "SaveGame",
+			"ObjectPhrases": ["Do you want to save the game?", "Game saved!" , "Save", "Exit"]
+		}
+	],
+
+	"Collectable_Objects":[
+		{
+			"ObjectName": "Small_Key",
+			"ObjectPhrase": "You found a small key!"
+		},
+
+		{
+			"ObjectName": "Chest_Key",
+			"ObjectPhrase": "You got a chest key!"
+		},
+
+		{
+			"ObjectName": "Sword",
+			"ObjectPhrase": "You got a sword! Use it to kill your enemies"
+		}
+	]
+}

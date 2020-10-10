@@ -1,0 +1,11 @@
+﻿{
+	"PausePanel": ["Pause", "Return to the game", "Configuration", "Return to menu"],
+
+	"ConfigurationPanel": ["Configuration", "Sound options", "Controls", "Camera options", "Return"],
+
+	"SoundOptionsPanel": ["Sound options", "Master volume", "Music volume", "Sounds volume", "Save changes", "Return", "Changes saved successfully", "Unsaved changes"],
+
+	"ControlsPanel": ["Controls", "Open/Close menu ingame", "Walk forward", "Walk backwards", "Walk to left", "Walk to right", "Interaction", "Attack", "Left Click", "Return"],
+
+	"CameraOptionsPanel": ["Camera options", "Chasing camera animation", "Chasing camera delay", "Save changes", "Return", "Changes saved successfully", "Unsaved changes"]
+}

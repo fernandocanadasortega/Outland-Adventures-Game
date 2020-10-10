@@ -1,0 +1,29 @@
+﻿# Tiled2Unity generated file. Do not modify by hand.
+# Wavefront file for 'Spawn_mesh_0007.obj'
+
+# Vertices (Count = 8)
+v -2 -2 0
+v -3 -2 0
+v -3 -1 0
+v -2 -1 0
+v -27 -2 0
+v -28 -2 0
+v -28 -1 0
+v -27 -1 0
+
+# Texture cooridinates (Count = 4)
+vt 0 1
+vt 0 0
+vt 1 0
+vt 1 1
+
+# Normal
+vn 0 0 -1
+
+# Mesh description
+g Spawn_mesh_0007
+
+# Faces
+f 1/1/1 2/2/1 3/3/1 4/4/1
+f 5/2/1 6/3/1 7/4/1 8/1/1
+

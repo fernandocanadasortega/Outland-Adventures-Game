@@ -1,0 +1,198 @@
+﻿{
+	"GameScenes":[
+		{
+		"Scene": "Market",
+		"Npcs":[
+			{
+			"NpcFuncion": "Generic NPC",
+			"NpcPhrases": ["Pues no va la china y me pregunta qué si quiero bolsa", "Todos esperan un héroe legendario que lo arregle todo, pero si se esforzasen un poco cada uno no necesitaríamos ningún héroe", "Yare yare daze", "No alimentes a las gallinas porfavor, luego estan muy gordas", "No pises las flores, si no se marchitarán", "Mi padre es un Señor, ¿sabes lo que eso significa? Que soy más importante que tú", "Desearía que fuesemos desconocidos", "Deshonra en tí, deshonra en tu familia, deshonra en tu VACA", "Las drogas no te hacen más feliz... Pero ayudan algunas veces", "¿Alguna vez te has preguntado como sería la vida si tu desaparecieras?"]
+			},
+
+			{
+			"NpcFuncion": "Funny NPC",
+			"NpcPhrases": ["La calvicie puede que sea símbolo de virilidad, pero nos reduce la oportunidad de comprobarlo", "Tengo que ir al oculista, pero nunca veo el momento", "La ignorancia es temporal, la estupidez es para siempre", "El matrimonio es como las libretas de ahorro: de tanto meter y sacar se pierde el interés", "La amistad es como la mayonesa: cuesta un huevo y hay que tratar de que no se corte", "Cada mujer es un mundo... ¡Haz turismo!", "No te tomes la vida en serio, al final no vas a salir vivo de ella", "La esclavitud no ha sido abolida, solo se puso en nómina"]
+			},
+
+			{
+			"NpcFuncion": "Armors_Weapons NPC Welcome",
+			"NpcPhrases": ["¡Bienvenido a mi tienda de armas!", "Quieres una armadura? Tengo de todos los tipos", "Así que el cachorro quiere garras nuevas...", "Bienvenido a mi humilde negocio", "Aun recuerdo en mis tiempos cuando usaba estas armas tan buenas para ensartar monstruos", "Si quieres durar alli afuera será mejor que compres mis armaduras", "No pueden matarte si tu los matas antes"]
+			},
+
+			{
+			"NpcFuncion": "Armors_Weapons NPC Buy",
+			"NpcPhrases": ["Lo siento, estoy sin productos ahora mísmo, vuelve más tarde", "Estoy sin stock, lo siento, vuelve más tarde"]
+			},
+
+			{
+			"NpcFuncion": "Armors_Weapons NPC Talk",
+			"NpcPhrases": ["¡Ten cuidado! Mis armas son de buena calidad pero no son infalibles", "Mi pericia para trabajar el acero es conocida en todo el Reino del Este", "Nunca pegues a un hombre con gafas, pégale con un bate de béisbol", "Dame ese sable y te lo le saco filo para que parezca nuevo"]
+			},
+
+			{
+			"NpcFuncion": "Armors_Weapons NPC ReturnToMenu",
+			"NpcPhrases": ["¿Deseas algo más?", "¿Te apetece alguna otra cosa?"]
+			},
+
+			{
+			"NpcFuncion": "Armors_Weapons NPC Exit",
+			"NpcPhrases": ["¡Hasta otra, vuelve pronto!", "¡No te mueras ahí fuera! Necesito clientes"]
+			},
+
+			{
+			"NpcFuncion": "Accessories NPC Welcome",
+			"NpcPhrases": ["¡Hola! ¿Qué quieres comprar hoy?", "Bienvenido a mi humilde negocio, ¿Qué se ofrece?", "Bienvenido! Traigo telas y sedas de tierras lejanas", "No puedo ayudarte con los monstruos que acechan, pero si que puedo hacer que luzcas divino"]
+			},
+
+			{
+			"NpcFuncion": "Accessories NPC Buy",
+			"NpcPhrases": ["Lo siento, estoy sin productos ahora mísmo, vuelve más tarde", "Estoy sin stock, lo siento, vuelve más tarde"]
+			},
+
+			{
+			"NpcFuncion": "Accessories NPC Talk",
+			"NpcPhrases": ["Tengo que volver a la caravana... no puedo dejar a las monturas desatendidas mucho más tiempo", "No digo que seas feo, solo digo que tu gusto por la moda es horrible", "Tengo sedas y ropajes de todos los tipos, tengo hasta vestidos que nunca habrás visto jamás"]
+			},
+
+			{
+			"NpcFuncion": "Accessories NPC ReturnToMenu",
+			"NpcPhrases": ["¿Se te antoja algo más?", "Mira todo lo que quieras, tengo todo el día"]
+			},
+
+			{
+			"NpcFuncion": "Accessories NPC Exit",
+			"NpcPhrases": ["¡Hasta pronto!", "Espero que vuelvas pronto, todavía tenemos que arreglar un par de cosas de tu look"]
+			},
+
+			{
+			"NpcFuncion": "Potions NPC Welcome",
+			"NpcPhrases": ["Buenas, ¿Qué se te ofrece?", "¡Vendo pociones de todos los tipos!", "Acercate, mira mis pociones", "¡Tengo la mejor mercancía de la zona!", "Si quieres durar alli afuera será mejor que compres mis pociones"]
+			},
+
+			{
+			"NpcFuncion": "Potions NPC Buy",
+			"NpcPhrases": ["Lo siento, estoy sin productos ahora mísmo, vuelve más tarde", "Estoy sin stock, lo siento, vuelve más tarde"]
+			},
+
+			{
+			"NpcFuncion": "Potions NPC Talk",
+			"NpcPhrases": ["Con estas pociones se te cura todo, bueno, menos el rehuma por ser tan viejuno...", "Para bien o para mal las pociones nunca vienen mal", "Mis pociones son altamente valoradas por el gremio de magos del Reino del Este", "Alguna gente dice que las pociones son para cobardes, la mayoría de esos idiotas están ahora muertos", "¿Harto de que tus golpes sean debiles como el viento? ¡Mis pociones son la solución!"]
+			},
+
+			{
+			"NpcFuncion": "Potions NPC ReturnToMenu",
+			"NpcPhrases": ["¿Buscas alguna otra poción?", "Tómate tu tiempo, no tengo prisa"]
+			},
+
+			{
+			"NpcFuncion": "Potions NPC Exit",
+			"NpcPhrases": ["¡Vuelve pronto! Destilaré más pociones para cuando vuelvas", "Cuando vayas de aventuras acuerdate de volver y comprarme unas pociones para tu viaje"]
+			},
+
+			{
+			"NpcFuncion": "Food NPC Welcome",
+			"NpcPhrases": ["¡No encontrarás género cómo este en varios kilómetros a la redonda!", "¡La mejor comida de la ciudad! ¡Deliciosa y nutritiva! Para nada caducada...", "¡Hola! ¿Necesitas algo específico para alguna receta?", "Mira que rábano más delicioso. ¡No lo encontrarás más fresco en ningún otro sitio!", "¡Esta comida revive a los muertos!", "¿Llevas la mochila algo vacía no? ¡Es hora de llenarla!"]
+			},
+
+			{
+			"NpcFuncion": "Food NPC Buy",
+			"NpcPhrases": ["Lo siento, estoy sin productos ahora mísmo, vuelve más tarde", "Estoy sin stock, lo siento, vuelve más tarde"]
+			},
+
+			{
+			"NpcFuncion": "Food NPC Talk",
+			"NpcPhrases": ["mmmm, creo que voy a apartar algunas fresas para más tarde... ¡Yo también quiero comer algo!", "Trabajar con comida es difícil... ¡Todo se ve tan apetitoso que me da hambre!", "Desde ingredientes sueltos hasta comidas preparadas, pídeme lo que sea y te lo cocinaré", "Me gusta la cocina desde que era pequeña, mi madre me enseño como cocinar la mayoría de estas recetas"]
+			},
+
+			{
+			"NpcFuncion": "Food NPC ReturnToMenu",
+			"NpcPhrases": ["¿Quieres algún otro tipo de ingrediente?", "¿Te interesa otra comida?"]
+			},
+
+			{
+			"NpcFuncion": "Food NPC Exit",
+			"NpcPhrases": ["¡Vuelve a mi tienda si te entra hambre de nuevo!", "¡Hasta otra! Vuelve cuando te apetezca"]
+			},
+
+			{
+			"NpcFuncion": "Enchantments NPC Welcome",
+			"NpcPhrases": ["¡Bienvenido! ¿Sientes la insaciable necesidad de dominar las artes mágicas? Entonces has venido al sitio perfecto...", "Te doy la bienvenida al mundo del conocimiento y el saber", "Mmmm, ¿otra vez tu? Veo que entiendes la magnitud y la importancia de mi oficio. Bien, bien... ¿Deseas conocer más?", "Asi que has podido ver con tus propios ojos todo el poder escondido en estos encantamientos... Adelante entonces"]
+			},
+
+			{
+			"NpcFuncion": "Enchantments NPC Buy",
+			"NpcPhrases": ["Lo siento, estoy sin productos ahora mísmo, vuelve más tarde", "Estoy sin stock, lo siento, vuelve más tarde"]
+			},
+
+			{
+			"NpcFuncion": "Enchantments NPC Talk",
+			"NpcPhrases": ["Vaya, vaya... así que pretendes dominar el antiguo arte de los encantamientos... Te advierto que no es algo que muchos hayan conseguido lograr. Encantar es un proceso extremadamente complejo y peligroso. Entran en juego fuerzas que no serías capaz ni de imaginar. Aunque, si crees que puedes hacerlo quizás te interesará lo que enseño", "Todo el poder salvaje y mágico se encuentra oculto aquí dentro. Bueno... tal vez no todo, pero mucho más de lo que podrías imaginar", "No son simples 'encantamientos'. Se tratan de las palabras de los astros, el susurro del cosmos, la llamada del poder... aunque todo eso no cabe en el letrero de la entrada"]
+			},
+
+			{
+			"NpcFuncion": "Enchantments NPC ReturnToMenu",
+			"NpcPhrases": ["¿Deseas alguna otra cosa joven?", "¿Deseas aprender algún otro encantamiento?"]
+			},
+
+			{
+			"NpcFuncion": "Enchantments NPC Exit",
+			"NpcPhrases": ["Suerte allá afuera, si algún día quieres volver eres bienvenido", "Que los astros guien tu camino joven aventurero"]
+			},
+
+			{
+			"NpcFuncion": "Black_Market NPC Welcome",
+			"NpcPhrases": ["Bienvenido a mi pequeño negocio compañero", "Ven, acercate sin miedo, no te voy a comer. Enserio, confía en mi"]
+			},
+
+			{
+			"NpcFuncion": "Black_Market NPC Buy",
+			"NpcPhrases": ["Estoy sin cosas para venderte, vuelve cuando haya matado un par de aventureros", "No me queda nada que venderte, vuelve en otro momento"]
+			},
+
+			{
+			"NpcFuncion": "Black_Market NPC Talk",
+			"NpcPhrases": ["Hue Hue Hue Hue Hue Hue Hue Hue Hue Hue Hue Hue Hue Hue Hue Hue Hue Hue Hue Hue Hue Hue Hue Hue", "Hehe, no tengas miedo, todo lo que ves aquí lo he conseguido honradamente", "¿Donde he conseguido estas armas? esta raaaro, me lo encontre"]
+			},
+
+			{
+			"NpcFuncion": "Black_Market NPC ReturnToMenu",
+			"NpcPhrases": ["¿Quieres algo más o vas a seguir malgastando mi tiempo?", "¿Quieres comprarme algo más pequeñín?"]
+			},
+
+			{
+			"NpcFuncion": "Black_Market NPC Exit",
+			"NpcPhrases": ["Adios bro pasatelo bien", "Vuelve más tarde, consigué más objetos para tí", "Vete de aqui antes de que tenga que partirte cara", "No encontarás mejores productos de los que hay aquí, me he asegurado de ello hue hue"]
+			}
+		]
+	},
+
+	{
+	"Scene": "Dojo",
+		"Npcs":[
+			{
+			"NpcFuncion": "Dojo Master NPC HaveGift",
+			"NpcPhrases": ["Si quieres salir afuera vas a necesitar una espada, tengo una guardada desde hace mucho tiempo, ahora es tuya", "Es peligroso andar solo, toma esto, úsalo para abrir el cofre de mi casa"]
+			},
+
+			{
+			"NpcFuncion": "Dojo Master NPC GiftGiven",
+			"NpcPhrases": ["Ten cuidado ahí fuera, no queremos que pierdas tu vida", "Suerte ahí fuera, la vas a necesitar desafortunadamente", "Que los dioses te bendigan con victoria y vida"]
+			}
+		]
+	},
+
+		{
+	"Scene": "Village Wall",
+		"Npcs":[
+			{
+			"NpcFuncion": "Door Guard NPC ObjectNeeded",
+			"NpcPhrases": ["No te puedo dejar salir afuera si no tienes una espada contigo, ordenes del jefe", "Ahí afuera hay monstruos peligrosos, necesitas un arma si deseas salir"]
+			},
+
+			{
+			"NpcFuncion": "Door Guard NPC ObjectHandOver",
+			"NpcPhrases": ["Ten cuidado ahí fuera, no tenemos ganas de ir a rescatar tu cuerpo sin vida", "No hagas ninguna estupidez ahí fuera solo porque tengas un arma", "Un consejo, mátalos antes de que te maten a tí"]
+			}
+		]
+	}
+	]
+}

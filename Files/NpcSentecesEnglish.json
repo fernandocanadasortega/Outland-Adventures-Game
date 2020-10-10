@@ -1,0 +1,198 @@
+﻿{
+	"GameScenes":[
+		{
+		"Scene": "Market",
+		"Npcs":[
+			{
+			"NpcFuncion": "Generic NPC",
+			"NpcPhrases": ["You know what they say, half elves are just the mules of the humanoids", "Everyone expect a legendary hero to come come and fix everything, but if everyone made a little effort we  wouldn't need any hero", "Yare yare daze", "Don’t feed the owlbears!", "Don't step on the flowers or they will wither", "My father is a Lord, do you know what that means? It means that I am more important than you", "I wish we were better strangers", "Dishonor on you. Dishonor on your family. Dishonor on your COW!", "Drugs won’t make you happy, but sometimes they help", "Do you ever wonder what life would be like if you just disappeared?"]
+			},
+
+			{
+			"NpcFuncion": "Funny NPC",
+			"NpcPhrases": ["I’d buy that for a gold...", "I once knew a goblin who talked like you, I didn’t know him for long if you get what I mean", "Redemption is overrated", "Bababooy, Bababooy, his head went kablooy", "I once knew a goblin who talked like you, I didn’t know him for long if you get what I mean", "Bang a gong, let’s get it on!", "What has 1 thumb and 2 smiles? – 2 headed ogre who just lost his arm", "They can’t hurt ya if ya don’t believe in ’em"]
+			},
+
+			{
+			"NpcFuncion": "Armors_Weapons NPC Welcome",
+			"NpcPhrases": ["Welcome to my weapons shop!", "Want an armor? I have all kinds", "So the puppy want new claws...", "Welcome to my humble store", "No other shop is this city is located where mine is!", "If you want to endure out there you better buy my armors", "They can't kill you if you them faster"]
+			},
+
+			{
+			"NpcFuncion": "Armors_Weapons NPC Buy",
+			"NpcPhrases": ["Sorry I have nothing to sell right now", "Sorry I'm out of stock, come later"]
+			},
+
+			{
+			"NpcFuncion": "Armors_Weapons NPC Talk",
+			"NpcPhrases": ["Be careful! My weapons are of good quality but they are not infallible", "My skills in steel working is known throughout the Eastern Kingdom", "Give me that sabre so I can sharpen it"]
+			},
+
+			{
+			"NpcFuncion": "Armors_Weapons NPC ReturnToMenu",
+			"NpcPhrases": ["Anything else?", "Fancy something else?"]
+			},
+
+			{
+			"NpcFuncion": "Armors_Weapons NPC Exit",
+			"NpcPhrases": ["¡Goodbye, come back soon!", "Don't die out there, I need clients"]
+			},
+
+			{
+			"NpcFuncion": "Accessories NPC Welcome",
+			"NpcPhrases": ["Hello! What do you want to buy today?", "Welcome to my humble shop, what do you want?", "Welcome! I bring fabrics and silks from distant lands", "I can't help you with the monsters that lurk, but I can make you shine"]
+			},
+
+			{
+			"NpcFuncion": "Accessories NPC Buy",
+			"NpcPhrases": ["Sorry I have nothing to sell right now", "Sorry I'm out of stock, come later"]
+			},
+
+			{
+			"NpcFuncion": "Accessories NPC Talk",
+			"NpcPhrases": ["I have to go back to the caravan... I can't leave the horses unattended much longer", "I'm not saying you're ugly, I'm just saying your taste for fashion is horrible", "I have silks and clothing of all kinds, I even have dresses that you hadn't ever seen"]
+			},
+
+			{
+			"NpcFuncion": "Accessories NPC ReturnToMenu",
+			"NpcPhrases": ["Do you fancy something else?", "Look all you want, I have all day"]
+			},
+
+			{
+			"NpcFuncion": "Accessories NPC Exit",
+			"NpcPhrases": ["¡See ya!", "I hope you come back soon, we still have to fix a few things about your look"]
+			},
+
+			{
+			"NpcFuncion": "Potions NPC Welcome",
+			"NpcPhrases": ["Hello, what do you need?", "I sell potions of all kinds!", "Come closer, look at my potions", "I have the best merchandise in the area!", "If you want to last out there you'd better buy my potions"]
+			},
+
+			{
+			"NpcFuncion": "Potions NPC Buy",
+			"NpcPhrases": ["Sorry I have nothing to sell right now", "Sorry I'm out of stock, come later"]
+			},
+
+			{
+			"NpcFuncion": "Potions NPC Talk",
+			"NpcPhrases": ["With these potions, everything is cured, well, except the rehuma...", "For better or for worse, potions are always useful", "My potions are highly valued by the Mage Guild of the Eastern Kingdom", "Some people say potions are for cowards, most of those idiots are now dead", "Fed up with your blows being weak like the wind? My potions are the solution!"]
+			},
+
+			{
+			"NpcFuncion": "Potions NPC ReturnToMenu",
+			"NpcPhrases": ["Are you looking for some other potion?", "Take your time, I'm not in a hurry"]
+			},
+
+			{
+			"NpcFuncion": "Potions NPC Exit",
+			"NpcPhrases": ["Come back soon! I'll brew more potions for when you come back", "When you go on adventures remember to come back and buy me some potions for your trip"]
+			},
+
+			{
+			"NpcFuncion": "Food NPC Welcome",
+			"NpcPhrases": ["You will not find a genre like this in several kilometers around!", "The best food in town! Delicious and nutritious! Not expired at all...", "Hello! Do you need something specific for a recipe?", "Look what a delicious radish. You won't find it colder anywhere else!", "This food revives the dead!", "You have a somewhat empty backpack, right? Time to fill it up!"]
+			},
+
+			{
+			"NpcFuncion": "Food NPC Buy",
+			"NpcPhrases": ["Sorry I have nothing to sell right now", "Sorry I'm out of stock, come later"]
+			},
+
+			{
+			"NpcFuncion": "Food NPC Talk",
+			"NpcPhrases": ["Hmm, I think I'm going to put some strawberries aside for later... I also want to eat them!", "Working with food is difficult... Everything looks so appetizing that I'm hungry!", "From simple ingredients to ready meals, ask me for anything and I'll cook it for you", "I have liked cooking since I was little, my mother taught me how to cook most of these recipes"]
+			},
+
+			{
+			"NpcFuncion": "Food NPC ReturnToMenu",
+			"NpcPhrases": ["Do you want some other type of ingredient?", "Would you like another meal?"]
+			},
+
+			{
+			"NpcFuncion": "Food NPC Exit",
+			"NpcPhrases": ["Come back to my store if you get hungry again!", "Goodbye! Come back whenever you want"]
+			},
+
+			{
+			"NpcFuncion": "Enchantments NPC Welcome",
+			"NpcPhrases": ["Welcome! Do you feel the insatiable need to master the magical arts? Then you have come to the perfect place...", "I welcome you to the world of knowledge and wisdom", "Mmmm, you again? I see that you understand the magnitude and importance of my profession. Well... Do you want to know more?", "So you have been able to see with your own eyes all the power hidden in these enchantments ... Go ahead then"]
+			},
+
+			{
+			"NpcFuncion": "Enchantments NPC Buy",
+			"NpcPhrases": ["Sorry I have nothing to sell right now", "Sorry I'm out of stock, come later"]
+			},
+
+			{
+			"NpcFuncion": "Enchantments NPC Talk",
+			"NpcPhrases": ["Well, well ... so you intend to master the ancient art of enchantments ... I warn you that it is not something that many have managed to achieve. Enchanting is an extremely complex and dangerous process. There are forces that come into play that you could not even imagine. Although, if you think you can do it maybe you will be interested in what I teach", "All the wild and magical power is hidden inside here. Well... maybe not everything, but much more than you could imagine", "They are not simply 'enchantments'. They are the words of the stars, the whisper of the cosmos, the call of power ... although all that does not fit in the sign of the entrance"]
+			},
+
+			{
+			"NpcFuncion": "Enchantments NPC ReturnToMenu",
+			"NpcPhrases": ["Do you want something else young one?", "Do you want to learn some other enchantment?"]
+			},
+
+			{
+			"NpcFuncion": "Enchantments NPC Exit",
+			"NpcPhrases": ["Good luck out there, if you ever want to come back you are welcome", "May the stars guide your way young adventurer"]
+			},
+
+			{
+			"NpcFuncion": "Black_Market NPC Welcome",
+			"NpcPhrases": ["Welcome to my shop ma' partner", "Come, come closer without fear, I will not eat you. Seriously trust me"]
+			},
+
+			{
+			"NpcFuncion": "Black_Market NPC Buy",
+			"NpcPhrases": ["Sorry I have nothing to sell right now", "Sorry I'm out of stock, come later"]
+			},
+
+			{
+			"NpcFuncion": "Black_Market NPC Talk",
+			"NpcPhrases": ["Hue Hue Hue Hue Hue Hue Hue Hue Hue Hue Hue Hue Hue Hue Hue Hue Hue Hue Hue Hue Hue Hue Hue Hue", "Hehe, don't be afraid, everything you see here I have earned it honestly", "Where have I got these weapons? I found it in the ground... Seriously"]
+			},
+
+			{
+			"NpcFuncion": "Black_Market NPC ReturnToMenu",
+			"NpcPhrases": ["Do you want something else or are you going to continue wasting my time?", "Do you want to buy me something more small one?"]
+			},
+
+			{
+			"NpcFuncion": "Black_Market NPC Exit",
+			"NpcPhrases": ["Goodbye bro, see ya", "Come back later, I will get more items for you", "Get out of here before I have to slap your face", "You will not find better products out there, I have made sure of it hue hue"]
+			}
+		]
+	},
+
+	{
+	"Scene": "Dojo",
+		"Npcs":[
+			{
+			"NpcFuncion": "Dojo Master NPC HaveGift",
+			"NpcPhrases": ["If you want to go out, you'll need a sword, I've had one for a long time, now it's yours", "It is dangerous to walk alone, take this, use it to open the chest of my house"]
+			},
+
+			{
+			"NpcFuncion": "Dojo Master NPC GiftGiven",
+			"NpcPhrases": ["Be careful out there, we don't want you to lose your life", "Good luck out there, you're going to need it unfortunately", "May the gods bless you with victory and life"]
+			}
+		]
+	},
+
+		{
+	"Scene": "Village Wall",
+		"Npcs":[
+			{
+			"NpcFuncion": "Door Guard NPC ObjectNeeded",
+			"NpcPhrases": ["I can't let you out if you don't have a sword with you, boss orders", "There are dangerous monsters out there, you need a weapon if you want to get out"]
+			},
+
+			{
+			"NpcFuncion": "Door Guard NPC ObjectHandOver",
+			"NpcPhrases": ["Be careful out there, we don't feel like going to rescue your lifeless body", "Don't do anything stupid out there just 'cause you got a weapon", "A tip, kill them before they kill you"]
+			}
+		]
+	}
+	]
+}

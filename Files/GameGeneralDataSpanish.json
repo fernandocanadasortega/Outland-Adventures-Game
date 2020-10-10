@@ -1,0 +1,11 @@
+﻿{
+	"PausePanel": ["Pausa", "Volver al juego", "Configuración", "Volver al menú"],
+
+	"ConfigurationPanel": ["Configuración", "Opciones de sonido", "Controles", "Opciones de cámara", "Volver"],
+
+	"SoundOptionsPanel": ["Opciones de sonido", "Volumen maestro", "Volumen de la música", "Volumen de los sonidos", "Guardar cambios", "Volver", "Cambios guardados correctamente", "Cambios sin guardar"],
+
+	"ControlsPanel": ["Controles", "Abrir/Cerrar el menú en partida", "Caminar hacia delante", "Caminar hacia atrás", "Caminar hacia la izquierda", "Caminar hacia la derecha", "Interacción", "Atacar", "Click Izquierdo", "Volver"],
+
+	"CameraOptionsPanel": ["Opciones de la cámara", "Animación cámara persecutora", "Retraso de persecución de la cámara", "Guardar cambios", "Volver", "Cambios guardados correctamente", "Cambios sin guardar"]
+}

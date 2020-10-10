@@ -1,0 +1,38 @@
+﻿# Tiled2Unity generated file. Do not modify by hand.
+# Wavefront file for 'Spawn-House-First-Floor_mesh_0006.obj'
+
+# Vertices (Count = 12)
+v -7 -7 0
+v -8 -7 0
+v -8 -6 0
+v -7 -6 0
+v -6 -8 0
+v -7 -8 0
+v -7 -7 0
+v -6 -7 0
+v -8 -8 0
+v -9 -8 0
+v -9 -7 0
+v -8 -7 0
+
+# Texture cooridinates (Count = 8)
+vt 0.35 0.72
+vt 0.375 0.72
+vt 0.375 0.76
+vt 0.35 0.76
+vt 0.225 0.64
+vt 0.25 0.64
+vt 0.25 0.68
+vt 0.225 0.68
+
+# Normal
+vn 0 0 -1
+
+# Mesh description
+g Spawn-House-First-Floor_mesh_0006
+
+# Faces
+f 1/1/1 2/2/1 3/3/1 4/4/1
+f 5/1/1 6/2/1 7/3/1 8/4/1
+f 9/5/1 10/6/1 11/7/1 12/8/1
+
