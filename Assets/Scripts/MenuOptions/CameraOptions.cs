@@ -46,6 +46,14 @@ public class CameraOptions : MonoBehaviour
     /// </summary>
     private void loadCameraText()
     {
+        SetLanguageText();
+    }
+
+    /// <summary>
+    /// Set the text language of Camera Options items
+    /// </summary>
+    private void SetLanguageText()
+    {
         List<string> cameraObjects = transform.parent.GetComponent<UI_LanguageSelector>().Select_UI_Objects("CameraOptionsPanel");
 
         for (int currentPauseObject = 0; currentPauseObject < 2; currentPauseObject++)
@@ -60,6 +68,11 @@ public class CameraOptions : MonoBehaviour
 
         transform.GetChild(6).transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = cameraObjects[3]; // save changes button
         transform.GetChild(7).transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = cameraObjects[4];
+    }
+
+    private void OnEnable()
+    {
+        SetLanguageText();
     }
 
     /// <summary>

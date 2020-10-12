@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -14,9 +15,17 @@ using UnityEngine.UI;
 public class PauseOptions : MonoBehaviour
 {
     /// <summary>
-    /// Function that is called right after the scene is loaded and and manage the text idiom of the Pause Options in the pause menu
+    /// Function that is called right after the scene is loaded and and manage the text language of the Pause Options in the pause menu
     /// </summary>
     private void Awake()
+    {
+        SetLanguageText();
+    }
+
+    /// <summary>
+    /// Set the text language of Pause Options items
+    /// </summary>
+    private void SetLanguageText()
     {
         List<string> pauseObjects = transform.parent.GetComponent<UI_LanguageSelector>().Select_UI_Objects("PausePanel");
         transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = pauseObjects[0];
@@ -25,6 +34,11 @@ public class PauseOptions : MonoBehaviour
         {
             transform.GetChild(currentPauseObject).transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = pauseObjects[currentPauseObject];
         }
+    }
+
+    private void OnEnable()
+    {
+        SetLanguageText();
     }
 
     /// <summary>

@@ -12,6 +12,11 @@ using UnityEngine;
 /// </summary>
 public class GameManagerButtons : MonoBehaviour
 {
+    private void Awake()
+    {
+        SetLanguageText();
+    }
+
     /// <summary>
     /// Create a new Player Progress file and call the function that start the game session
     /// </summary>
@@ -27,6 +32,22 @@ public class GameManagerButtons : MonoBehaviour
     public void ChargeGame()
     {
         StartCoroutine(ChargeGameFile());
+    }
+
+    private void SetLanguageText()
+    {
+        List<string> gameButtons = GameObject.Find("PauseCanvas").GetComponent<UI_LanguageSelector>().Select_UI_Objects("GameButtons");
+
+        // Ponerlo en una puta corrutina hasta que deje de puto fallar
+        transform.GetChild(0).transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = gameButtons[0];
+        transform.GetChild(1).transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = gameButtons[1];
+        transform.GetChild(2).transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = gameButtons[2];
+        transform.GetChild(3).transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = gameButtons[3];
+    }
+
+    private void OnEnable()
+    {
+        SetLanguageText();
     }
 
     /// <summary>

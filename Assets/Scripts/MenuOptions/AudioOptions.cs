@@ -30,7 +30,7 @@ public class AudioOptions : MonoBehaviour
     /// </summary>
     private void Awake()
     {
-        loadAudioText();
+        SetLanguageText();
 
         soundOptionsPanel = this.gameObject;
         soundSliders_Input = new Dictionary<string, GameObject[]>();
@@ -61,10 +61,15 @@ public class AudioOptions : MonoBehaviour
         }
     }
 
+    private void OnEnable()
+    {
+        SetLanguageText();
+    }
+
     /// <summary>
-    /// Set the text idiom of Audio Options items
+    /// Set the text language of Audio Options items
     /// </summary>
-    private void loadAudioText()
+    private void SetLanguageText()
     {
         List<string> audioObjects = transform.parent.GetComponent<UI_LanguageSelector>().Select_UI_Objects("SoundOptionsPanel");
 

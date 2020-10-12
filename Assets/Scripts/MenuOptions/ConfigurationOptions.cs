@@ -13,9 +13,17 @@ using UnityEngine;
 public class ConfigurationOptions : MonoBehaviour
 {
     /// <summary>
-    /// Function that is called right after the scene is loaded and manage the text idiom of the Configuration Options in the pause menu
+    /// Function that is called right after the scene is loaded and manage the text language of the Configuration Options in the pause menu
     /// </summary>
     private void Awake()
+    {
+        SetLanguageText();
+    }
+
+    /// <summary>
+    /// Set the text language of Configuration Options items
+    /// </summary>
+    private void SetLanguageText()
     {
         List<string> configurationObjects = transform.parent.GetComponent<UI_LanguageSelector>().Select_UI_Objects("ConfigurationPanel");
         transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = configurationObjects[0];
@@ -24,5 +32,10 @@ public class ConfigurationOptions : MonoBehaviour
         {
             transform.GetChild(currentPauseObject).transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = configurationObjects[currentPauseObject];
         }
+    }
+
+    private void OnEnable()
+    {
+        SetLanguageText();
     }
 }

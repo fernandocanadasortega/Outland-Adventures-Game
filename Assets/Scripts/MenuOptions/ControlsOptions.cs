@@ -17,6 +17,19 @@ public class ControlsOptions : MonoBehaviour
     /// </summary>
     private void Awake()
     {
+        SetLanguageText();
+    }
+
+    private void OnEnable()
+    {
+        SetLanguageText();
+    }
+
+    /// <summary>
+    /// Set the text language of Controls information items
+    /// </summary>
+    private void SetLanguageText()
+    {
         List<string> controlsObjects = transform.parent.GetComponent<UI_LanguageSelector>().Select_UI_Objects("ControlsPanel");
 
         for (int currentPauseObject = 0; currentPauseObject < 2; currentPauseObject++)

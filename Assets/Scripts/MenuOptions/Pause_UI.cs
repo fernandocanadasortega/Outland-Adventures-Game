@@ -175,11 +175,23 @@ public class Pause_UI : MonoBehaviour
                 yield return null;
             }
 
+            if (GameObject.Find("MainPanel") != null)
+            {
+                GameObject.Find("MainPanel").SetActive(false);
+            }
+
             PauseGame();
         }
         else
         {
             PauseGame();
+            try
+            {
+                GameObject.Find("MainMenu").transform.GetChild(0).gameObject.SetActive(true);
+            }
+            catch (System.Exception)
+            { }
+
             ManageMainPauseMenu(false);
 
             for (float currentFade = fadeTime; currentFade >= 0; currentFade -= Time.deltaTime)

@@ -1,11 +1,17 @@
 ﻿{
 	"PausePanel": ["Pause", "Return to the game", "Configuration", "Return to menu"],
 
-	"ConfigurationPanel": ["Configuration", "Sound options", "Controls", "Camera options", "Return"],
+	"ConfigurationPanel": ["Configuration", "Sound options", "Language", "Controls", "Camera options", "Return"],
 
 	"SoundOptionsPanel": ["Sound options", "Master volume", "Music volume", "Sounds volume", "Save changes", "Return", "Changes saved successfully", "Unsaved changes"],
 
+	"LanguagePanel": ["Languages", "Spanish", "English", "Save changes", "Return", "Changes saved successfully", "Unsaved changes"],
+
 	"ControlsPanel": ["Controls", "Open/Close menu ingame", "Walk forward", "Walk backwards", "Walk to left", "Walk to right", "Interaction", "Attack", "Left Click", "Return"],
 
-	"CameraOptionsPanel": ["Camera options", "Chasing camera animation", "Chasing camera delay", "Save changes", "Return", "Changes saved successfully", "Unsaved changes"]
+	"CameraOptionsPanel": ["Camera options", "Chasing camera animation", "Chasing camera delay", "Save changes", "Return", "Changes saved successfully", "Unsaved changes"],
+
+	"UpperButtons": ["Save Progress", "Load Progress", "Configuration", "Log out"],
+
+	"GameButtons": ["New Game", "Load Game", "Credits", "Exit"]
 }

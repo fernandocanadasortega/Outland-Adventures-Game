@@ -15,7 +15,7 @@ using UnityEngine;
 /// </summary>
 public class UI_LanguageSelector : MonoBehaviour
 {
-    public string textIdiom = "";
+    public string textLanguage = "";
     private Dictionary<string, List<string>> UI_Objects;
 
     /// <summary>
@@ -43,7 +43,24 @@ public class UI_LanguageSelector : MonoBehaviour
     {
         UI_Objects = new Dictionary<string, List<string>>();
 
-        string filePath = Path.GetFullPath("./") + "Files\\GameGeneralData" + textIdiom + ".json";
+        if (PlayerPrefs.GetString("GameLanguage") != null && !PlayerPrefs.GetString("GameLanguage").Equals(""))
+        {
+            textLanguage = PlayerPrefs.GetString("GameLanguage");
+        }
+        else
+        {
+            PlayerPrefs.SetString("GameLanguage", "Spanish");
+            textLanguage = PlayerPrefs.GetString("GameLanguage");
+        }
+
+        ReadGameGeneralData();
+    }
+
+    public void ReadGameGeneralData()
+    {
+        UI_Objects.Clear();
+
+        string filePath = Path.GetFullPath("./") + "Files\\GameGeneralData" + textLanguage + ".json";
         //string filePath = Path.GetFullPath("./") + "Assets\\Files\\GameGeneralData" + textIdiom + ".json";
         string jsonData;
 
@@ -72,8 +89,11 @@ public class PauseCanvas
     public List<string> PausePanel;
     public List<string> ConfigurationPanel;
     public List<string> SoundOptionsPanel;
+    public List<string> LanguagePanel;
     public List<string> ControlsPanel;
     public List<string> CameraOptionsPanel;
+    public List<string> UpperButtons;
+    public List<string> GameButtons;
 
     /// <summary>
     /// Read the UI interface texts and save it into the dictionary
@@ -84,7 +104,10 @@ public class PauseCanvas
         UI_Objects.Add("PausePanel", PausePanel);
         UI_Objects.Add("ConfigurationPanel", ConfigurationPanel);
         UI_Objects.Add("SoundOptionsPanel", SoundOptionsPanel);
+        UI_Objects.Add("LanguagePanel", LanguagePanel);
         UI_Objects.Add("ControlsPanel", ControlsPanel);
         UI_Objects.Add("CameraOptionsPanel", CameraOptionsPanel);
+        UI_Objects.Add("UpperButtons", UpperButtons);
+        UI_Objects.Add("GameButtons", GameButtons);
     }
 }

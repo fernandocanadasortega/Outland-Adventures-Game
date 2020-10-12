@@ -50,6 +50,12 @@ public class upperButtons_Manipulation : MonoBehaviour
         }
     }
 
+    private void SetLanguageText(int selectedButton)
+    {
+        List<string> gameUpperButtons = GameObject.Find("PauseCanvas").GetComponent<UI_LanguageSelector>().Select_UI_Objects("UpperButtons");
+        transform.GetChild(selectedButton).GetComponent<TMPro.TextMeshProUGUI>().text = gameUpperButtons[selectedButton];
+    }
+
     /// <summary>
     /// Move the colliding button if the is no space to the text to show correctly (Move the button "load progress" when the mouse enter the button "save progress")
     /// </summary>
@@ -284,6 +290,8 @@ public class upperButtons_Manipulation : MonoBehaviour
             buttonPanels[0].SetActive(true);
             buttonPanels[1].SetActive(true);
             textLabels[0].SetActive(true);
+
+            SetLanguageText(0);
         }
         catch (System.Exception)
         { }
@@ -322,6 +330,8 @@ public class upperButtons_Manipulation : MonoBehaviour
 
             buttonPanels[1].SetActive(true);
             textLabels[1].SetActive(true);
+
+            SetLanguageText(1);
 
             StartCoroutine(statusChecker(true, false, true, false, true, 1));
         }
@@ -363,6 +373,8 @@ public class upperButtons_Manipulation : MonoBehaviour
 
             buttonPanels[2].SetActive(true);
             textLabels[2].SetActive(true);
+
+            SetLanguageText(2);
 
             StartCoroutine(statusChecker(false, false, true, false, true, 2));
         }
@@ -406,6 +418,8 @@ public class upperButtons_Manipulation : MonoBehaviour
             buttonPanels[2].SetActive(true);
             buttonPanels[3].SetActive(true);
             textLabels[3].SetActive(true);
+
+            SetLanguageText(3);
 
             StartCoroutine(statusChecker(false, true, true, true, true, 3));
         }
