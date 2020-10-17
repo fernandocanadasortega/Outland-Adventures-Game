@@ -166,31 +166,29 @@ public class Pause_UI : MonoBehaviour
                 // set color with currentFade as alpha
                 canvasImage.color = new Color(0, 0, 0, currentFade);
 
-                if (currentFade >= menuItemsFadeTime)
-                {
-                    ManageMainPauseMenu(true);
-                    transform.GetChild(0).gameObject.GetComponent<PauseOptions>().enable_DiableReturnToMenu();
-                }
-
                 yield return null;
             }
+
+            PauseGame();
 
             if (GameObject.Find("MainPanel") != null)
             {
                 GameObject.Find("MainPanel").SetActive(false);
             }
 
-            PauseGame();
+            ManageMainPauseMenu(true);
+            transform.GetChild(0).gameObject.GetComponent<PauseOptions>().enable_DiableReturnToMenu();
         }
         else
         {
-            PauseGame();
             try
             {
                 GameObject.Find("MainMenu").transform.GetChild(0).gameObject.SetActive(true);
             }
             catch (System.Exception)
             { }
+
+            PauseGame();
 
             ManageMainPauseMenu(false);
 

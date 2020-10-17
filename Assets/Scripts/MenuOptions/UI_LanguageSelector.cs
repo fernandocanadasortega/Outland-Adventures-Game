@@ -15,7 +15,7 @@ using UnityEngine;
 /// </summary>
 public class UI_LanguageSelector : MonoBehaviour
 {
-    public string textLanguage = "";
+    private string textLanguage = "";
     private Dictionary<string, List<string>> UI_Objects;
 
     /// <summary>
@@ -43,6 +43,13 @@ public class UI_LanguageSelector : MonoBehaviour
     {
         UI_Objects = new Dictionary<string, List<string>>();
 
+        ReadGameGeneralData();
+    }
+
+    public void ReadGameGeneralData()
+    {
+        UI_Objects.Clear();
+
         if (PlayerPrefs.GetString("GameLanguage") != null && !PlayerPrefs.GetString("GameLanguage").Equals(""))
         {
             textLanguage = PlayerPrefs.GetString("GameLanguage");
@@ -52,13 +59,6 @@ public class UI_LanguageSelector : MonoBehaviour
             PlayerPrefs.SetString("GameLanguage", "Spanish");
             textLanguage = PlayerPrefs.GetString("GameLanguage");
         }
-
-        ReadGameGeneralData();
-    }
-
-    public void ReadGameGeneralData()
-    {
-        UI_Objects.Clear();
 
         string filePath = Path.GetFullPath("./") + "Files\\GameGeneralData" + textLanguage + ".json";
         //string filePath = Path.GetFullPath("./") + "Assets\\Files\\GameGeneralData" + textIdiom + ".json";

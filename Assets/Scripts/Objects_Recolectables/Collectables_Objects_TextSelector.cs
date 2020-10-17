@@ -14,7 +14,7 @@ using UnityEngine.SceneManagement;
 /// </summary>
 public class Collectables_Objects_TextSelector : MonoBehaviour
 {
-    public string textIdiom = "";
+    private string textLanguage = "";
     private bool isCollectable;
     private Dictionary<string, List<string>> interact_ObjectsDictionary;
     private Dictionary<string, string> collectable_ObjectsDictionary;
@@ -63,9 +63,26 @@ public class Collectables_Objects_TextSelector : MonoBehaviour
     {
         interact_ObjectsDictionary = new Dictionary<string, List<string>>();
         collectable_ObjectsDictionary = new Dictionary<string, string>();
+        ReadCollectible_Interaction();
+    }
+
+    public void ReadCollectible_Interaction()
+    {
+        interact_ObjectsDictionary.Clear();
+        collectable_ObjectsDictionary.Clear();
+
+        if (PlayerPrefs.GetString("GameLanguage") != null && !PlayerPrefs.GetString("GameLanguage").Equals(""))
+        {
+            textLanguage = PlayerPrefs.GetString("GameLanguage");
+        }
+        else
+        {
+            PlayerPrefs.SetString("GameLanguage", "Spanish");
+            textLanguage = PlayerPrefs.GetString("GameLanguage");
+        }
 
         string currentSceneName = SceneManager.GetActiveScene().name;
-        string filePath = Path.GetFullPath("./") + "Files\\Collectibles_Interactions" + textIdiom + ".json";
+        string filePath = Path.GetFullPath("./") + "Files\\Collectibles_Interactions" + textLanguage + ".json";
         //string filePath = Path.GetFullPath("./") + "Assets\\Files\\Collectibles_Interactions" + textIdiom + ".json";
         string jsonData;
 

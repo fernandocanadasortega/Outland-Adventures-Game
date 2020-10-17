@@ -15,6 +15,7 @@ public class upperButtons_Manipulation : MonoBehaviour
 {
     private GameObject upperButtons;
     private List<GameObject> textLabels, buttonPanels, buttons;
+    private List<string> gameUpperButtonsLanguage;
 
     private int itemsCount = 4;
     private bool showingButton, showingText;
@@ -52,8 +53,8 @@ public class upperButtons_Manipulation : MonoBehaviour
 
     private void SetLanguageText(int selectedButton)
     {
-        List<string> gameUpperButtons = GameObject.Find("PauseCanvas").GetComponent<UI_LanguageSelector>().Select_UI_Objects("UpperButtons");
-        transform.GetChild(selectedButton).GetComponent<TMPro.TextMeshProUGUI>().text = gameUpperButtons[selectedButton];
+        gameUpperButtonsLanguage = GameObject.Find("PauseCanvas").GetComponent<UI_LanguageSelector>().Select_UI_Objects("UpperButtons");
+        transform.GetChild(selectedButton).GetComponent<TMPro.TextMeshProUGUI>().text = gameUpperButtonsLanguage[selectedButton];
     }
 
     /// <summary>
@@ -316,7 +317,12 @@ public class upperButtons_Manipulation : MonoBehaviour
     /// </summary>
     public void OnUploadClick()
     {
+        string[] textLanguage = { gameUpperButtonsLanguage[4], gameUpperButtonsLanguage[5], gameUpperButtonsLanguage[8], gameUpperButtonsLanguage[9] };
         buttons[0].GetComponent<Animator>().SetTrigger("Pressed");
+
+        // GameObject.Find("MainPanel").SetActive(false);
+        GameObject.Find("MainMenu").transform.GetChild(1).gameObject.SetActive(true);
+        GameObject.Find("MainMenu").transform.GetChild(1).gameObject.GetComponent<Upload_Download_Buttons>().StartDatabaseProgress(textLanguage);
     }
 
     /// <summary>
@@ -359,7 +365,12 @@ public class upperButtons_Manipulation : MonoBehaviour
     /// </summary>
     public void OnDownloadClick()
     {
+        string[] textLanguage = { gameUpperButtonsLanguage[6], gameUpperButtonsLanguage[7], gameUpperButtonsLanguage[8], gameUpperButtonsLanguage[9] };
         buttons[1].GetComponent<Animator>().SetTrigger("Pressed");
+
+        // GameObject.Find("MainPanel").SetActive(false);
+        GameObject.Find("MainMenu").transform.GetChild(1).gameObject.SetActive(true);
+        GameObject.Find("MainMenu").transform.GetChild(1).gameObject.GetComponent<Upload_Download_Buttons>().StartDatabaseProgress(textLanguage);
     }
 
     /// <summary>

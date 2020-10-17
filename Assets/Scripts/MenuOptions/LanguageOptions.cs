@@ -173,8 +173,10 @@ public class LanguageOptions : MonoBehaviour
             }
 
             StartCoroutine(Show_RemoveSaveText());
-            GameObject.Find("PauseCanvas").GetComponent<UI_LanguageSelector>().textLanguage = PlayerPrefs.GetString("GameLanguage");
-            GameObject.Find("PauseCanvas").GetComponent<UI_LanguageSelector>().ReadGameGeneralData();
+            // GameObject.Find("PauseCanvas").GetComponent<UI_LanguageSelector>().textLanguage = PlayerPrefs.GetString("GameLanguage");
+            if (GameObject.Find("PauseCanvas") != null) GameObject.Find("PauseCanvas").GetComponent<UI_LanguageSelector>().ReadGameGeneralData();
+            if (GameObject.Find("Npc_Sentences") != null) GameObject.Find("Npc_Sentences").GetComponent<NPC_Sentences_Recoverer>().ReadNpcData();
+            if (GameObject.Find("Collectable_Interaction_Sentences") != null) GameObject.Find("Collectable_Interaction_Sentences").GetComponent<Collectables_Objects_TextSelector>().ReadCollectible_Interaction();
             loadLanguageText();
         }
     }

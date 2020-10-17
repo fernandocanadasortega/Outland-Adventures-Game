@@ -11,7 +11,7 @@
 
 	"CameraOptionsPanel": ["Camera options", "Chasing camera animation", "Chasing camera delay", "Save changes", "Return", "Changes saved successfully", "Unsaved changes"],
 
-	"UpperButtons": ["Save Progress", "Load Progress", "Configuration", "Log out"],
+	"UpperButtons": ["Save Progress", "Load Progress", "Configuration", "Log out", "Saving progress in the cloud", "Progress saved successfully", "Synchronizing with the cloud progress", "Progress synchronized sucessfully", "Press anywhere to exit", "SQL error"],
 
 	"GameButtons": ["New Game", "Load Game", "Credits", "Exit"]
 }

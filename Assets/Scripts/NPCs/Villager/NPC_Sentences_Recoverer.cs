@@ -6,12 +6,28 @@ using UnityEngine.SceneManagement;
 
 public class NPC_Sentences_Recoverer : MonoBehaviour
 {
-    public string npcLanguage = "";
+    private string npcLanguage = "";
     private Dictionary<string, List<string>> NpcPhrasesDictionary;
 
     private void Awake()
     {
         NpcPhrasesDictionary = new Dictionary<string, List<string>>();
+        ReadNpcData();
+    }
+
+    public void ReadNpcData()
+    {
+        NpcPhrasesDictionary.Clear();
+
+        if (PlayerPrefs.GetString("GameLanguage") != null && !PlayerPrefs.GetString("GameLanguage").Equals(""))
+        {
+            npcLanguage = PlayerPrefs.GetString("GameLanguage");
+        }
+        else
+        {
+            PlayerPrefs.SetString("GameLanguage", "Spanish");
+            npcLanguage = PlayerPrefs.GetString("GameLanguage");
+        }
 
         string currentSceneName = SceneManager.GetActiveScene().name;
         string filePath = Path.GetFullPath("./") + "Files\\NpcSenteces" + npcLanguage + ".json";

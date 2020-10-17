@@ -11,7 +11,7 @@
 
 	"CameraOptionsPanel": ["Opciones de la cámara", "Animación cámara persecutora", "Retraso de persecución de la cámara", "Guardar cambios", "Volver", "Cambios guardados correctamente", "Cambios sin guardar"],
 
-	"UpperButtons": ["Guardar Progreso", "Cargar Progreso", "Configuración", "Cerrar sesión"],
+	"UpperButtons": ["Guardar Progreso", "Cargar Progreso", "Configuración", "Cerrar sesión", "Guardando progreso en la nube", "Progreso guardado exitosamente", "Sincronizando con el progreso en de la nube", "Progreso sincronizado correctamente", "Pulse cualquier parte para salir" "Error de SQL"],
 
 	"GameButtons": ["Nueva Partida", "Cargar Partida", "Creditos", "Salir"]
 }
