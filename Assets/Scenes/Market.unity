@@ -9389,7 +9389,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isMovingX: 1
   scaleChange: 0.0056565
-  targetMap: {fileID: 0}
+  targetMap: {fileID: 710714462}
 --- !u!1001 &1595260539
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11553,7 +11553,7 @@ PrefabInstance:
         type: 3}
       propertyPath: targetMap
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 710714462}
     - target: {fileID: 7571178832451989275, guid: 98086297d27261146b1688655af640ca,
         type: 3}
       propertyPath: musicName
@@ -12581,7 +12581,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -8
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300222, guid: aba4680d26c671946af71f13f613f937, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
