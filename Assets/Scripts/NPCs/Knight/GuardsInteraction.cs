@@ -9,6 +9,11 @@ public class GuardsInteraction : MonoBehaviour
     public bool needObject; // from player
     public string requiredObjectTag;
 
+    /// <summary>
+    /// Start guard interaction if the player isn't talking and the player pressed the interaction button, also check if the guard needs
+    /// something from you or can give you something
+    /// </summary>
+    /// <param name="collision">Gameobject that enter the seller collider area</param>
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.tag == "Player")

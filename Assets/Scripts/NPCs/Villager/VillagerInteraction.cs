@@ -10,7 +10,10 @@ public class VillagerInteraction : MonoBehaviour
     public string requiredObjectTag;
     private Vector3 villagerLastPosition = Vector3.zero;
 
-
+    /// <summary>
+    /// Check if the object that collided this villager is another villager or is the player
+    /// </summary>
+    /// <param name="collision">Gameobject that enter the villager collider area</param>
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Player")
@@ -32,6 +35,10 @@ public class VillagerInteraction : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Stop villager from moving, turn the villager gaze towards the player and enable the interaction between villager and player
+    /// </summary>
+    /// <param name="collision">Gameobject that enter the villager collider area</param>
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.tag == "Player")
@@ -103,6 +110,10 @@ public class VillagerInteraction : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Allow villager to move again
+    /// </summary>
+    /// <param name="collision">Gameobject that enter the villager collider area</param>
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.tag == "Player")

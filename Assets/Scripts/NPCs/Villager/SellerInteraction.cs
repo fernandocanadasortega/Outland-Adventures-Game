@@ -6,6 +6,10 @@ public class SellerInteraction : MonoBehaviour
 {
     public GameObject talkingCloud;
 
+    /// <summary>
+    /// Start seller interaction if the player isn't talking and the player pressed the interaction button
+    /// </summary>
+    /// <param name="collision">Gameobject that enter the seller collider area</param>
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.tag == "Player")

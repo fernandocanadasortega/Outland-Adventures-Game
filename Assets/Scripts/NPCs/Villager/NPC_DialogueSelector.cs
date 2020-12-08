@@ -3,6 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Class that selects phrases from npc according to their function from the dictionary randomly
+/// </summary>
 [System.Serializable]
 public class NPC_DialogueSelector : MonoBehaviour
 {
@@ -19,6 +22,9 @@ public class NPC_DialogueSelector : MonoBehaviour
     public List<string> CurrentSentences { get => currentSentences; set => currentSentences = value; }
     public int NumberOfSentences { get => numberOfSentences; set => numberOfSentences = value; }
 
+    /// <summary>
+    /// Function that is called right after the scene is loaded, initialize the variables
+    /// </summary>
     private void Awake()
     {
         recoverer = GameObject.Find("Npc_Sentences").GetComponent<NPC_Sentences_Recoverer>();
@@ -26,6 +32,9 @@ public class NPC_DialogueSelector : MonoBehaviour
         currentSentences = new List<string>();
     }
 
+    /// <summary>
+    /// Select npc phrase/s, the number of phrases selected changes depending on the lenght of the phrases or according to their function
+    /// </summary>
     public void selectNewSentences()
     {
         choosedSentences.Clear();
@@ -34,11 +43,11 @@ public class NPC_DialogueSelector : MonoBehaviour
 
         if (npcState == null || npcState.Length == 0)
         {
-            allSentences = recoverer.recoverFunctionSentences(npcFunction);
+            allSentences = recoverer.RecoverFunctionSentences(npcFunction);
         }
         else
         {
-            allSentences = recoverer.recoverFunctionSentences(npcFunction + npcState);
+            allSentences = recoverer.RecoverFunctionSentences(npcFunction + npcState);
         }
 
         if (allSentences != null)
@@ -114,6 +123,11 @@ public class NPC_DialogueSelector : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Select a random number between the given range
+    /// </summary>
+    /// <param name="sentecesCount">Number of phrases to be selected</param>
+    /// <returns>Int, index of the selected phrase</returns>
     private int selectRandom(int sentecesCount)
     {
         int selectedIndexSentence = UnityEngine.Random.Range(0, sentecesCount);

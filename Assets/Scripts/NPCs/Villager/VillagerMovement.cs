@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// This class is in charge of manage the movement and the animation of the villagers
+/// </summary>
 public class VillagerMovement : MonoBehaviour
 {
     public float speedMovement;
@@ -28,7 +31,9 @@ public class VillagerMovement : MonoBehaviour
     private Vector2 maxWalkPoint;
     private bool hasWalkArea;
 
-    // Start is called before the first frame update
+    /// <summary>
+    /// Method that is called before the first frame update. Get the rigid body and the animator of the villager and select an action
+    /// </summary>
     void Start()
     {
         villager = GetComponent<Rigidbody2D>();
@@ -47,6 +52,10 @@ public class VillagerMovement : MonoBehaviour
         SelectAction(7);
     }
 
+    /// <summary>
+    /// This method is executed every frame, is used in game physics. Move the villager in a direction or wait an idle time
+    /// according to the selected action
+    /// </summary>
     private void FixedUpdate()
     {
         if (isWalking)
@@ -128,6 +137,9 @@ public class VillagerMovement : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Change the current walking direction of the villager
+    /// </summary>
     public void changeDirection()
     {
         isWalking = false;
@@ -136,6 +148,9 @@ public class VillagerMovement : MonoBehaviour
         SelectAction(7);
     }
 
+    /// <summary>
+    /// Select an action, the current action can not be same as the last action
+    /// </summary>
     public void SelectAction(int maxActions)
     {
         if (!isTalking)
@@ -168,6 +183,9 @@ public class VillagerMovement : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Start walking in the selected direction
+    /// </summary>
     public void startTalking()
     {
         isWalking = false;
@@ -176,6 +194,10 @@ public class VillagerMovement : MonoBehaviour
         animator.SetBool("isWalking", false);
     }
 
+    /// <summary>
+    /// Check if the villager is being pushed
+    /// </summary>
+    /// <param name="isPushed">Boolean, true if the villager is being pushed</param>
     public void isPushed(bool isPushed)
     {
         animator.SetBool("isPushed", isPushed);

@@ -4,17 +4,26 @@ using UnityEngine;
 using System.IO;
 using UnityEngine.SceneManagement;
 
+/// <summary>
+/// Class that reads the npc sentences from a file and charges into NpcPhrasesDictionary dictionary
+/// </summary>
 public class NPC_Sentences_Recoverer : MonoBehaviour
 {
     private string npcLanguage = "";
     private Dictionary<string, List<string>> NpcPhrasesDictionary;
 
+    /// <summary>
+    /// Function that is called right after the scene is loaded, initialize the variables and read all the npc sentences
+    /// </summary>
     private void Awake()
     {
         NpcPhrasesDictionary = new Dictionary<string, List<string>>();
         ReadNpcData();
     }
 
+    /// <summary>
+    /// Read all the npc sentences from a json file and save it into a local dictionary according to the current scene
+    /// </summary>
     public void ReadNpcData()
     {
         NpcPhrasesDictionary.Clear();
@@ -49,7 +58,12 @@ public class NPC_Sentences_Recoverer : MonoBehaviour
         sceneList.ListGameScenes(currentSceneName, NpcPhrasesDictionary);
     }
 
-    public List<string> recoverFunctionSentences(string NpcFuncion)
+    /// <summary>
+    /// Recover all the npc sentences according to the ncp function
+    /// </summary>
+    /// <param name="NpcFuncion">String, npc function</param>
+    /// <returns>Npc sentences according to the ncp function</returns>    
+    public List<string> RecoverFunctionSentences(string NpcFuncion)
     {
         try
         {
@@ -62,6 +76,9 @@ public class NPC_Sentences_Recoverer : MonoBehaviour
     }
 }
 
+/// <summary>
+/// Class used to read and write data into a json file, holds the npc sentences according to the npc function
+/// </summary>
 [System.Serializable]
 public class NpcSentences
 {
@@ -74,6 +91,9 @@ public class NpcSentences
     }
 }
 
+/// <summary>
+/// Class used to read and write data into a json file, holds all the npc sentences in a certain scene
+/// </summary>
 [System.Serializable]
 public class NpcList
 {
@@ -92,6 +112,9 @@ public class NpcList
     }
 }
 
+/// <summary>
+/// Class used to read and write data into a json file, holds all the npc sentences in the game
+/// </summary>
 [System.Serializable]
 public class SceneList
 {

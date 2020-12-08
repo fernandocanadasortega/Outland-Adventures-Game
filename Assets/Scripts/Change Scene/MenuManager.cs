@@ -22,7 +22,7 @@ public class MenuManager : MonoBehaviour
     /// </summary>
     private void Awake()
     {
-        //Screen.SetResolution(768, 800, false);
+        Screen.SetResolution(768, 800, false);
         soundManager = GameObject.Find("SoundManager");
         DontDestroyOnLoad(soundManager);
         DontDestroyOnLoad(GameObject.Find("ChargeCanvas"));

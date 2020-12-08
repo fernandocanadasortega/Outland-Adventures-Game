@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// This class is in charge of manage the movement and the animation of the knights
+/// </summary>
 public class KnightPatrol : MonoBehaviour
 {
     public float speedMovement;
@@ -19,7 +22,9 @@ public class KnightPatrol : MonoBehaviour
     private Vector2 maxWalkPoint;
     private bool hasWalkArea;
 
-    // Start is called before the first frame update
+    /// <summary>
+    /// Method that is called before the first frame update. Get the rigid body and the animator of the knight and select an action
+    /// </summary>
     void Start()
     {
         knight = GetComponent<Rigidbody2D>();
@@ -37,6 +42,10 @@ public class KnightPatrol : MonoBehaviour
         SelectAction();
     }
 
+    /// <summary>
+    /// This method is executed every frame, is used in game physics. Move the knight in a direction or wait an idle time
+    /// according to the selected action
+    /// </summary>
     private void FixedUpdate()
     {
         if (isWalking)
@@ -100,6 +109,9 @@ public class KnightPatrol : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Start idle state for a certain time
+    /// </summary>
     private void startIdleState()
     {
         isWalking = false;
@@ -108,6 +120,8 @@ public class KnightPatrol : MonoBehaviour
         animator.SetBool("isWalking", false);
     }
 
+    /// <summary>
+    /// Select an action, the current action can not be same as the last action
     public void SelectAction()
     {
         if (actionSelected != 0)

@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// DEPRECATED, Useless class, now this feature is controlled in the games launcher
+/// </summary>
 public class Upload_Download_Buttons : MonoBehaviour
 {
     private GameObject databaseLabel;
